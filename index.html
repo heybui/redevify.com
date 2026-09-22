@@ -108,8 +108,9 @@ footer small { font-size:var(--label); letter-spacing:.14em; }
 
 /* Stacked layout: mark sits above copy, divider moves to the bottom */
 @media (max-width: 880px) {
-  main { align-content:flex-start; }
-  .mark-col { border-right:0; border-bottom:1px solid var(--line); }
+  main { flex-direction:column; }
+  .mark-col { flex:1 0 auto; border-right:0; border-bottom:1px solid var(--line); }
+  .copy { flex:0 0 auto; }
 }
 
 @keyframes fade { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
