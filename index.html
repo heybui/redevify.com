@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redevify — Software Studio for Web, Mobile &amp; AI Products</title>
+<meta name="description" content="Redevify is a software studio that turns ideas into shipped products for businesses and individuals: web applications, marketing sites, iOS and Android apps, AI and integrations.">
+<link rel="canonical" href="https://redevify.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Redevify">
+<meta name="theme-color" content="#F4F5F6">
+<meta name="color-scheme" content="light">
+
+<link rel="preload" href="/fonts/plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Redevify">
+<meta property="og:url" content="https://redevify.com/">
+<meta property="og:title" content="Redevify — We love making software products.">
+<meta property="og:description" content="Ideas into shipped products — for businesses and individuals. Web, mobile, AI &amp; integrations.">
+<meta property="og:image" content="https://redevify.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Redevify — We love making software products.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Redevify — We love making software products.">
+<meta name="twitter:description" content="Ideas into shipped products — for businesses and individuals.">
+<meta name="twitter:image" content="https://redevify.com/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://redevify.com/#org",
+      "name": "Redevify",
+      "url": "https://redevify.com/",
+      "logo": "https://redevify.com/icon-512.png",
+      "email": "hello@redevify.com",
+      "description": "Software studio turning ideas into shipped products for businesses and individuals.",
+      "knowsAbout": ["Web applications", "Marketing sites", "iOS apps", "Android apps", "AI integrations", "APIs", "Internal tools"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://redevify.com/#website",
+      "url": "https://redevify.com/",
+      "name": "Redevify",
+      "publisher": { "@id": "https://redevify.com/#org" }
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:400; font-display:swap; src:url(/fonts/plex-mono-400.woff2) format('woff2'); }
+@font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:500; font-display:swap; src:url(/fonts/plex-mono-500.woff2) format('woff2'); }
+@font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:600; font-display:swap; src:url(/fonts/plex-mono-600.woff2) format('woff2'); }
+
+:root {
+  --bg:#F4F5F6; --sheet:#FAFBFB; --ink:#0E1013; --muted:#606874; --body:#5A6270;
+  --line:#D5D8DD; --rule:#DFE2E6; --link:#1F5EFF; --link-hover:#0A34B8;
+  --label:11px;
+}
+*, *::before, *::after { box-sizing:border-box; }
+html, body { margin:0; padding:0; min-height:100%; background:var(--bg); }
+body { color:var(--ink); font-family:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+a { color:var(--link); text-decoration:none; }
+a:hover { color:var(--link-hover); }
+a:focus-visible { outline:2px solid var(--link); outline-offset:3px; }
+
+.frame { min-height:100vh; min-height:100dvh; padding:clamp(10px,1.8vw,26px); display:flex; }
+.sheet { flex:1; min-width:0; border:1px solid var(--line); background:var(--sheet); display:flex; flex-direction:column; }
+.label { font-size:var(--label); letter-spacing:.16em; color:var(--muted); text-transform:uppercase; }
+
+header, footer { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:clamp(13px,1.6vw,20px) clamp(14px,2vw,26px); }
+header { border-bottom:1px solid var(--line); animation:fade .5s ease both; }
+footer { border-top:1px solid var(--line); animation:fade .6s ease .24s both; }
+.brand { font-size:clamp(14px,1.4vw,17px); font-weight:600; letter-spacing:-.025em; }
+
+main { flex:1; display:flex; flex-wrap:wrap; align-items:stretch; }
+.mark-col { flex:1 1 min(420px,100%); min-width:0; display:flex; align-items:center; justify-content:center; padding:clamp(30px,5vw,72px) clamp(18px,3vw,44px); border-right:1px solid var(--line); }
+.mark { width:clamp(150px,26vw,340px); animation:layer .8s cubic-bezier(.2,.7,.2,1) .12s both; }
+.mark svg { display:block; width:100%; height:auto; }
+.mark .lo { opacity:.32; animation:markLower 5.2s ease-in-out 1s infinite; }
+.mark .hi { animation:markUpper 5.2s ease-in-out 1s infinite; }
+
+.copy { flex:1 1 min(440px,100%); min-width:0; padding:clamp(24px,3.4vw,52px) clamp(18px,2.6vw,40px); display:flex; flex-direction:column; justify-content:center; gap:clamp(18px,2.6vw,34px); }
+.intro { display:flex; flex-direction:column; gap:clamp(10px,1.3vw,15px); animation:fade .6s ease .08s both; }
+h1 { margin:0; font-weight:500; font-size:clamp(26px,3.6vw,48px); line-height:1.06; letter-spacing:-.035em; max-width:21ch; text-wrap:balance; }
+.lede { margin:0; font-size:clamp(13px,1.3vw,16px); line-height:1.55; color:var(--body); max-width:48ch; text-wrap:pretty; }
+
+.build { animation:fade .6s ease .16s both; }
+.build h2 { margin:0; padding-bottom:10px; font-weight:400; }
+.build ol { list-style:none; margin:0; padding:0; border-bottom:1px solid var(--rule); }
+.build li { display:grid; grid-template-columns:34px 1fr; column-gap:14px; align-items:baseline; padding:clamp(8px,1vw,12px) 0; border-top:1px solid var(--rule); font-size:clamp(13px,1.3vw,16px); }
+.build li span { font-size:var(--label); color:var(--muted); }
+
+.email { font-size:clamp(15px,1.9vw,24px); font-weight:500; letter-spacing:-.025em; border-bottom:1px solid var(--link); padding-bottom:2px; overflow-wrap:anywhere; }
+footer small { font-size:var(--label); letter-spacing:.14em; }
+
+/* Stacked layout: mark sits above copy, divider moves to the bottom */
+@media (max-width: 880px) {
+  main { align-content:flex-start; }
+  .mark-col { border-right:0; border-bottom:1px solid var(--line); }
+}
+
+@keyframes fade { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+@keyframes layer { from { opacity:0; transform:translateY(-14px); } to { opacity:1; transform:none; } }
+@keyframes markUpper { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-.9px); } }
+@keyframes markLower { 0%,100% { transform:translateY(0); opacity:.32; } 50% { transform:translateY(1.1px); opacity:.24; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; } }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="sheet">
+    <header>
+      <a class="brand" href="/" aria-label="Redevify home" style="color:inherit">redevify</a>
+      <span class="label">Software studio</span>
+    </header>
+
+    <main>
+      <div class="mark-col">
+        <div class="mark">
+          <svg viewBox="0 0 48 48" role="img" aria-label="Redevify logo mark" width="340" height="340">
+            <path class="lo" d="M24 18 L44 30 L24 42 L4 30 Z" fill="#0E1013"/>
+            <path class="hi" d="M24 4 L44 16 L24 28 L4 16 Z" fill="#0E1013"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="copy">
+        <section class="intro" aria-labelledby="h-pos">
+          <div class="label" id="h-pos">01 &nbsp;/&nbsp; Positioning</div>
+          <h1>We love making software products.</h1>
+          <p class="lede">Ideas into shipped products — for businesses and individuals.</p>
+        </section>
+
+        <section class="build" aria-labelledby="h-build">
+          <h2 class="label" id="h-build">02 &nbsp;/&nbsp; What we build</h2>
+          <ol>
+            <li><span>01</span>Web — applications and marketing sites</li>
+            <li><span>02</span>Mobile — iOS and Android</li>
+            <li><span>03</span>AI &amp; integrations — APIs, internal tools</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <a class="email" href="mailto:hello@redevify.com">hello@redevify.com</a>
+      <small class="label">© <span id="y">2026</span> Redevify</small>
+    </footer>
+  </div>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
